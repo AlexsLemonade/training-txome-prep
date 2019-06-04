@@ -3,6 +3,7 @@ data/
 
 # txome indices themselves
 index/
+index_with_decoy/
 
 # script for generating decoy txome from
 # https://raw.githubusercontent.com/COMBINE-lab/SalmonTools/23eac847decf601c345abd8527eed5dc1b382573/scripts/generateDecoyTranscriptome.sh
