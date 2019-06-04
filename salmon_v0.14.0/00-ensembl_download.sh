@@ -12,6 +12,7 @@ wget --directory-prefix=${cdna_directory} ftp://ftp.ensembl.org/pub/release-96/f
 wget --directory-prefix=${cdna_directory} ftp://ftp.ensembl.org/pub/release-96/fasta/mus_musculus/cdna/Mus_musculus.GRCm38.cdna.all.fa.gz
 wget --directory-prefix=${cdna_directory} ftp://ftp.ensembl.org/pub/release-96/fasta/danio_rerio/cdna/Danio_rerio.GRCz11.cdna.all.fa.gz
 wget --directory-prefix=${cdna_directory} ftp://ftp.ensembl.org/pub/release-96/fasta/canis_familiaris/cdna/Canis_familiaris.CanFam3.1.cdna.all.fa.gz
+gunzip ${cdna_directory}/*
 
 # now we'll do the GTF files -- we need these to generate the tx2gene mapping
 # for use with tximport and for generating the indices with decoy sequences
